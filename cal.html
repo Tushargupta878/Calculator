@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./cal.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>Calculator</div>
+    </header>
+    <hr />
+    <main>
+      <div id="form__container">
+        <div id="inputfield">
+          <input
+            id="input"
+            type="text"
+            name="math-input"
+            onkeypress="restrictinput(event)"
+          />
+        </div>
+        <div class="buttons">
+          <button class="button" value="(">(</button>
+          <button class="button" value=")">)</button>
+          <button id="Clear-All">AC</button>
+          <button id="clear">C</button>
+          <br />
+          <button class="button" value="7">7</button>
+          <button class="button" value="8">8</button>
+          <button class="button" value="9">9</button>
+          <button class="button" value="/">/</button>
+          <br />
+          <button class="button" value="4">4</button>
+          <button class="button" value="5">5</button>
+          <button class="button" value="6">6</button>
+          <button class="button" value="*">*</button>
+          <br />
+          <button class="button" value="1">1</button>
+          <button class="button" value="2">2</button>
+          <button class="button" value="3">3</button>
+          <button class="button" value="-">-</button>
+          <br />
+          <button class="button" value="0">0</button>
+          <button class="button" value=".">.</button>
+          <button id="calculate">=</button>
+          <button class="button" value="+">+</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./cal.js"></script>
+  </body>
+</html>
